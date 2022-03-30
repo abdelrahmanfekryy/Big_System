@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="Aboutus | Tatbeek"/>
+        <meta property="og:site_name" content="Tatbeek For Digital Solutions"/>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"/>
+        <title> Aboutus | Tatbeek </title>
+        <link type="image/x-icon" rel="shortcut icon" href="{{ url_for('static', filename='Imgs/Tatbeek.png')}}"/>
+    </head>
+    <body>
+        <div class="container">
+            <div class="theme">
+                <div class="logo">
+                    <img src="{{ url_for('static', filename='Imgs/Tatbeek.png') }}" width="50px"/>
+                </div>
+                <div class="assets">
+                    <span id="date"></span>
+                    <span id="time"></span>
+                </div>
+            </div>
+            <div class="app">
+                <div class="panal">
+                    <div class="sidemenu">
+                        <div>
+                            <p>Auth</p>
+                        </div>
+                        <div>
+                            <p>Time Setup</p>
+                        </div>
+                        <div>
+                            <p>Reason Setup</p>
+                        </div>
+                        <div>
+                            <p>Report</p>
+                        </div>
+                        <div>
+                            <p>Devices</p>
+                        </div>
+                        <div>
+                            <p>Users</p>
+                        </div>
+                    </div> 
+                    <div class="screen">
+                        <div class="devices">
+                        </div>
+                    </div>  
+                </div>  
+            </div>   
+        </div>
+        <script src="{{ url_for('static', filename='canvas.js') }}"> </script>
+        
+    </body>
+</html>
